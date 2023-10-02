@@ -44,7 +44,7 @@ for id_zamestnance, info in zamestnanci.items():
     print(f"{info['jmeno']} {info['prijmeni']}, {info['email']}")
 
 
-id_vybraneho_zamestnance = 1  
-vybrany_zamestnanec = zamestnanci.get(id_vybraneho_zamestnance)
+id = 1  
+vybrany_zamestnanec = zamestnanci.get(id )
 if vybrany_zamestnanec:
     print(f"Vybraný zaměstnanec: {vybrany_zamestnanec['jmeno']} {vybrany_zamestnanec['prijmeni']}, pozice: {vybrany_zamestnanec['pozice']}")
