@@ -1,3 +1,11 @@
+def slovnik(nazev_souboru, slovnik):
+    with open(nazev_souboru, "w") as soubor:
+        for id_zamestnance, info in slovnik.items():
+            soubor.write(f"Zaměstnanec {id_zamestnance}:\n")
+            for klic, hodnota in info.items():
+                soubor.write(f"{klic.capitalize()}: {hodnota}\n")
+            soubor.write("\n")
+
 zamestnanci = {
     1: {
         "jmeno": "Martin",
@@ -29,22 +37,6 @@ zamestnanci = {
     }
 }
 
-print("Zde je seznam zaměstnanců:")
-for id_zamestnance, info in zamestnanci.items():
-    print(f"Zaměstnanec {id_zamestnance}:")
-    print(f"Jméno: {info['jmeno']}")
-    print(f"Příjmení: {info['prijmeni']}")
-    print(f"Pozice: {info['pozice']}")
-    print(f"Email: {info['email']}")
-    print(f"Kancelář: {info['kancelar']}")
-    print()
-
-print("Všechny důležité údaje:")
-for id_zamestnance, info in zamestnanci.items():
-    print(f"{info['jmeno']} {info['prijmeni']}, {info['email']}")
-
-
-id = 1  
-vybrany_zamestnanec = zamestnanci.get(id )
-if vybrany_zamestnanec:
-    print(f"Vybraný zaměstnanec: {vybrany_zamestnanec['jmeno']} {vybrany_zamestnanec['prijmeni']}, pozice: {vybrany_zamestnanec['pozice']}")
+nazev_souboru = "zamestnanci.txt"
+slovnik(nazev_souboru, zamestnanci)
+print(f"Soubor {nazev_souboru} byl vytvořen.")

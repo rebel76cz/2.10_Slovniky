@@ -1,0 +1,28 @@
+Zaměstnanec 1:
+Jmeno: Martin
+Prijmeni: Hruska
+Pozice: Programátor
+Email: martinhruska@seznam.cz
+Kancelar: C1
+
+Zaměstnanec 2:
+Jmeno: Pepa
+Prijmeni: Pepina
+Pozice: Kuchař
+Email: Pepik1@seznam.cz
+Kancelar: B7
+
+Zaměstnanec 3:
+Jmeno: Eliška
+Prijmeni: Pokorná
+Pozice: Učetní
+Email: Epokorna@seznam.cz
+Kancelar: V2
+
+Zaměstnanec 4:
+Jmeno: Marek
+Prijmeni: Doležal
+Pozice: Asistent
+Email: MarekD@seznam.cz
+Kancelar: G1
+
